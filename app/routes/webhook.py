@@ -13,7 +13,7 @@ def format_timestamp(ts):
     return dt.strftime("%d %B %Y - %I:%M %p UTC")
 
 
-@webhook_bp.route("/webhook/github", methods=["POST"])
+@webhook_bp.route("/webhook", methods=["POST"])
 def github_webhook():
     event_type = request.headers.get("X-GitHub-Event")
     payload = request.json
