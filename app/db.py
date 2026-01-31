@@ -14,3 +14,5 @@ def init_db():
     db = mongo_client[mongo_db]
 
     return db
+
+
